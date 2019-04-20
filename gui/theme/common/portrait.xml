@@ -3511,14 +3511,18 @@
 			<button style="main_button">
 				<condition var1="tw_has_data_media" var2="1"/>
 				<placement x="%center_x%" y="%row2a_y%"/>
-				<text>{@adb_sideload_btn=ADB Sideload}</text>
-				<action function="page">sideload</action>
+				<text>{@fix_context_btn=Fix Contexts}</text>
+				<action function="page">fixcontexts</action>
 			</button>
 
 			<button style="main_button">
+				<condition var1="tw_allow_partition_sdcard" var2="1"/>
 				<placement x="%indent%" y="%row8_y%"/>
-				<text>{@terminal_btn=Terminal}</text>
-				<action function="page">terminalcommand</action>
+				<text>{@part_sd_btn=Partition SD Card}</text>
+				<actions>
+					<action function="set">partitionlisterror=0</action>
+					<action function="page">partsdcardsel</action>
+				</actions>
 			</button>
 
 			<button style="main_button">
@@ -3527,22 +3531,26 @@
 				<action function="page">filemanagerlist</action>
 			</button>
 
+			<button style="main_button">
+				<placement x="%indent%" y="%row13a_y%"/>
+				<text>{@terminal_btn=Terminal}</text>
+				<action function="page">terminalcommand</action>
+			</button>
+
+			<button style="main_button">
+				<placement x="%center_x%" y="%row13a_y%"/>
+				<text>{@reload_theme_btn=Reload Theme}</text>
+				<action function="reload"/>
+			</button>
+
+			<button style="main_button">
+				<condition var1="tw_has_data_media" var2="1"/>
+				<placement x="%indent%" y="%row19_y%"/>
+				<text>{@adb_sideload_btn=ADB Sideload}</text>
+				<action function="page">sideload</action>
+			</button>
+
 			<listbox style="advanced_listbox">
-				<placement x="%indent%" y="%row13a_y%" w="%content_width%" h="%listbox_advanced_height%"/>
-				<listitem name="{@reload_theme_btn=Reload Theme}">
-					<action function="reload"/>
-				</listitem>
-				<listitem name="{@part_sd_btn=Partition SD Card}">
-					<condition var1="tw_allow_partition_sdcard" var2="1"/>
-					<actions>
-						<action function="set">partitionlisterror=0</action>
-						<action function="page">partsdcardsel</action>
-					</actions>
-				</listitem>
-				<listitem name="{@fix_context_btn=Fix Contexts}">
-					<condition var1="tw_has_data_media" var2="1"/>
-					<action function="page">fixcontexts</action>
-				</listitem>
 				<listitem name="{@dumlock_btn=HTC Dumlock}">
 					<condition var1="tw_show_dumlock" var2="1"/>
 					<action function="page">htcdumlock</action>
