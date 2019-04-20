@@ -3550,6 +3550,12 @@
 				<action function="page">sideload</action>
 			</button>
 
+			<button style="main_button">
+				<placement x="%center_x%" y="%row19_y%"/>
+				<text>{@tools=Tools}</text>
+				<action function="page">tools</action>
+			</button>
+
 			<listbox style="advanced_listbox">
 				<listitem name="{@dumlock_btn=HTC Dumlock}">
 					<condition var1="tw_show_dumlock" var2="1"/>
@@ -3624,6 +3630,59 @@
 			<action>
 				<touch key="back"/>
 				<action function="page">main</action>
+			</action>
+		</page>
+
+		<page name="tools">
+			<template name="page"/>
+
+			<text style="text_l">
+				<placement x="%col1_x_header%" y="%row3_header_y%"/>
+				<text>{@tools_hdr=Tools}</text>
+			</text>
+
+			<button style="main_button">
+				<placement x="%indent%" y="%row2a_y%"/>
+				<text>{@magisk_btn=Magisk Install}</text>
+				<actions>
+					<action function="set">tw_back=tools</action>
+					<action function="set">tw_filename=/sbin/magisk.zip</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip</action>
+					<action function="set">tw_text1={@magisk_text=Magisk will be installed.}</action>
+					<action function="set">tw_text2={@magisk_confirm=Try to install it?}</action>
+					<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+
+			<button style="main_button">
+				<placement x="%center_x%" y="%row2a_y%"/>
+				<text>{@unmagisk_btn=Magisk Uninstall}</text>
+				<actions>
+					<action function="set">tw_back=tools</action>
+					<action function="set">tw_filename=/sbin/unmagisk.zip</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip</action>
+					<action function="set">tw_text1={@unmagisk_text=Magisk will be Uninstalled.}</action>
+					<action function="set">tw_text2={@unmagisk_confirm=Are you sure you want to uninstall magisk?}</action>
+					<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+
+			<action>
+				<touch key="home"/>
+				<action function="page">main</action>
+			</action>
+
+			<action>
+				<touch key="back"/>
+				<action function="page">advanced</action>
 			</action>
 		</page>
 

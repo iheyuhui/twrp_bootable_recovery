@@ -719,5 +719,13 @@
 		<string name="include_kernel_log">Include Kernel Log</string>
 		<string name="sha2_chk">Use SHA2 for hashing</string>
 		<string name="unable_set_boot_slot">Error changing bootloader boot slot to {1}</string>
+		<string name="tools">Tools</string>
+		<string name="tools_hdr">Tools</string>
+		<string name="magisk_btn">Magisk Install</string>
+		<string name="magisk_text">Magisk will be installed.</string>
+		<string name="magisk_confirm">Try to install it?</string>
+		<string name="unmagisk_btn">Magisk Uninstal</string>
+		<string name="unmagisk_text">Magisk will be Uninstalled.</string>
+		<string name="unmagisk_confirm">Are you sure you want to uninstall magisk?</string>
 	</resources>
 </language>
