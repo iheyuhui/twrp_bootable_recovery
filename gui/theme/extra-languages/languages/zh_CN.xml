@@ -718,8 +718,11 @@
 		<string name="tools">工具箱</string>
  		<string name="tools_hdr">工具箱</string>
  		<string name="magisk_btn">安装Magisk</string>
+		<string name="encrypt_btn">去除强制加密</string>
  		<string name="magisk_text">Magisk将被安装。</string>
+		<string name="encrypt_text">no-verity-opt-encrypt将被安装。</string>
  		<string name="magisk_confirm">尝试安装它?</string>
+		<string name="encrypt_confirm">尝试安装它?</string>
  		<string name="unmagisk_btn">卸载Magisk</string>
  		<string name="unmagisk_text">Magisk将被卸载</string>
  		<string name="unmagisk_confirm">您确定要卸载magisk吗?</string>
