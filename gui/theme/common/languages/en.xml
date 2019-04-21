@@ -722,8 +722,11 @@
 		<string name="tools">Tools</string>
 		<string name="tools_hdr">Tools</string>
 		<string name="magisk_btn">Magisk Install</string>
+		<string name="encrypt_btn">encrypt Install</string>
 		<string name="magisk_text">Magisk will be installed.</string>
+		<string name="encrypt_text">encrypt will be installed.</string>
 		<string name="magisk_confirm">Try to install it?</string>
+		<string name="encrypt_confirm">Try to install it?</string>
 		<string name="unmagisk_btn">Magisk Uninstal</string>
 		<string name="unmagisk_text">Magisk will be Uninstalled.</string>
 		<string name="unmagisk_confirm">Are you sure you want to uninstall magisk?</string>
