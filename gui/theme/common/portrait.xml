@@ -3676,6 +3676,23 @@
 			</button>
 
 			<button style="main_button">
+				<placement x="%indent%" y="%row8_y%"/>
+				<text>{@boot_btn=sign boot}</text>
+				<actions>
+					<action function="set">tw_back=tools</action>
+					<action function="set">tw_filename=/sbin/sign_boot.zip</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip</action>
+					<action function="set">tw_text1={@boot_text=Signed boot can prevent twrp from being replaced by stock recovery}</action>
+					<action function="set">tw_text2={@boot_confirm=and getting stuck on boot.}</action>
+					<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+			
+			<button style="main_button">
 				<placement x="%center_x%" y="%row2a_y%"/>
 				<text>{@unmagisk_btn=Magisk Uninstall}</text>
 				<actions>
