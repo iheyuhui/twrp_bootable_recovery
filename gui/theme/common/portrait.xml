@@ -3657,6 +3657,23 @@
 					<action function="page">confirm_action</action>
 				</actions>
 			</button>
+			
+			<button style="main_button">
+				<placement x="%center_x%" y="%row8_y%"/>
+				<text>{@encrypt_btn=encrypt Install}</text>
+				<actions>
+					<action function="set">tw_back=tools</action>
+					<action function="set">tw_filename=/sbin/no-verity-opt-encrypt.zip</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip</action>
+					<action function="set">tw_text1={@encrypt_text=encrypt will be installed.}</action>
+					<action function="set">tw_text2={@encrypt_confirm=Try to install it?}</action>
+					<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
 
 			<button style="main_button">
 				<placement x="%center_x%" y="%row2a_y%"/>
