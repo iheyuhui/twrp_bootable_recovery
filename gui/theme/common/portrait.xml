@@ -3660,16 +3660,17 @@
 			
 			<button style="main_button">
 				<placement x="%center_x%" y="%row8_y%"/>
-				<text>{@encrypt_btn=encrypt Install}</text>
+				<text>{@rm_batteryinfo_btn=RM Battery-info}</text>
 				<actions>
 					<action function="set">tw_back=tools</action>
-					<action function="set">tw_filename=/sbin/no-verity-opt-encrypt.zip</action>
+					<action function="set">tw_filename=/sbin/del_battery-info.zip</action>
 					<action function="set">tw_action=queuezip</action>
 					<action function="set">tw_has_action2=1</action>
 					<action function="set">tw_action2=flash</action>
 					<action function="set">tw_action2_param=flash_zip</action>
-					<action function="set">tw_text1={@encrypt_text=encrypt will be installed.}</action>
-					<action function="set">tw_text2={@encrypt_confirm=Try to install it?}</action>
+					<action function="set">tw_text1={@rm_batteryinfo_confirm=Do you remove battery information?}</action>
+					<action function="set">tw_action_text1={@rm_batteryinfo_doing=Removing Battery Info...}</action>
+					<action function="set">tw_complete_text1={@rm_batteryinfo_complete=Remove Battery Info Complete}</action>
 					<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
 					<action function="page">confirm_action</action>
 				</actions>
@@ -3677,16 +3678,17 @@
 
 			<button style="main_button">
 				<placement x="%indent%" y="%row8_y%"/>
-				<text>{@boot_btn=sign boot}</text>
+				<text>{@rm_bootpwd_btn=RM Boot-PWD}</text>
 				<actions>
 					<action function="set">tw_back=tools</action>
-					<action function="set">tw_filename=/sbin/sign_boot.zip</action>
+					<action function="set">tw_filename=/sbin/del_pwd.zip</action>
 					<action function="set">tw_action=queuezip</action>
 					<action function="set">tw_has_action2=1</action>
 					<action function="set">tw_action2=flash</action>
 					<action function="set">tw_action2_param=flash_zip</action>
-					<action function="set">tw_text1={@boot_text=Signed boot can prevent twrp from being replaced by stock recovery}</action>
-					<action function="set">tw_text2={@boot_confirm=and getting stuck on boot.}</action>
+					<action function="set">tw_text1={@rm_bootpwd_confirm=Do you remove password on system boot?}</action>
+					<action function="set">tw_action_text1={@rm_bootpwd_doing=Removing Boot PWD...}</action>
+					<action function="set">tw_complete_text1={@rm_bootpwd_complete=Remove Boot PWD Complete}</action>
 					<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
 					<action function="page">confirm_action</action>
 				</actions>

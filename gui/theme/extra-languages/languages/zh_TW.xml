@@ -715,5 +715,21 @@
 		<string name="include_kernel_log">包含內核日誌</string>
 		<string name="sha2_chk">使用 SHA2 進行散列校驗</string>
 		<string name="unable_set_boot_slot">更改 bootloader 啟動分區至 {1} 錯誤</string>
+		<string name="tools">工具箱</string>
+ 		<string name="tools_hdr">工具箱</string>
+ 		<string name="magisk_btn">安装Magisk</string>
+		<string name="rm_bootpwd_btn">清除开机密码</string>
+		<string name="rm_bootpwd_confirm">是否清除系统开机密码？</string>
+		<string name="rm_bootpwd_doing">正在清除开机密码...</string>
+		<string name="rm_bootpwd_complete">清除开机密码完成</string>
+ 		<string name="magisk_text">Magisk将被安装。</string>
+ 		<string name="magisk_confirm">尝试安装它?</string>
+ 		<string name="unmagisk_btn">卸载Magisk</string>
+		<string name="rm_batteryinfo_btn">清除电池信息</string>
+		<string name="rm_batteryinfo_confirm">是否清除电池信息？</string>
+		<string name="rm_batteryinfo_doing">正在清除电池信息...</string>
+		<string name="rm_batteryinfo_complete">清除电池信息完成</string>
+ 		<string name="unmagisk_text">Magisk将被卸载</string>
+ 		<string name="unmagisk_confirm">您确定要卸载magisk吗?</string>
 	</resources>
 </language>
